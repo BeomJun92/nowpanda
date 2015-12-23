@@ -1,0 +1,50 @@
+article.shopping-basket-list {
+    margin: 20px 35px;
+}
+
+article.shopping-basket-list .basket-row {
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+article.shopping-basket-list .basket-row .basket-item {
+    height: 260px;
+    width: 200px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-right: 10px;
+    position: relative;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-image {
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-image: url(/images/basket-1.png);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+article.shopping-basket-list .basket-row .basket-item:last-child {
+    margin-right: 0;
+}
+
+article.shopping-basket-list .basket-row .basket-item p {
+    margin: 0;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-name {
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 200px;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-price {
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+

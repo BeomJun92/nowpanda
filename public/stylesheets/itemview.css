@@ -1,0 +1,170 @@
+section.item-main .inner-col {
+    width: 900px;
+}
+
+section.item-main article.item-header {
+    width: 100%;
+    position: relative;
+    padding: 10px 35px;
+}
+
+section.item-main article.item-header .item-image {
+    width: 500px;
+    display: inline-block;
+    height: 500px;
+
+}
+
+section.item-main article.item-header .item-image .image {
+    width: 500px;
+    height: 500px;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-image: url(/images/item-1.png);
+}
+
+section.item-main article.item-header .item-order-form {
+    width: 320px;
+    height: 500px;
+    display: inline-block;
+    float: right;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 0px 15px;
+}
+
+section.item-main article.item-header .item-order-form .item-price > div {
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+}
+
+section.item-main article.item-header .item-order-form .image {
+    display: inline-block;
+}
+
+section.item-main article.item-header .item-order-form .order-form select {
+    width: 100%;
+}
+
+section.item-main article.item-header .item-order-form .order-form .form-select > div {
+    margin: 10px 0;
+}
+
+section.item-main article.item-header .item-order-form .image .icon {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+}
+
+section.item-main article.item-header .item-order-form .original-price .image .icon {
+    background-image: url(/images/icon-originalprice.png);
+}
+
+section.item-main article.item-header .item-order-form .membership-price .image .icon {
+    background-image: url(/images/icon-membershipprice.png);
+}
+
+section.item-main article.item-header .item-order-form .text {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: -4px;
+    font-size: 22px;
+}
+
+.additonal-information {
+    margin: 10px 0;
+}
+
+.order-form .actions {
+    margin-top: 70px;
+}
+
+.form-select {
+    margin: 15px 0px;
+}
+
+.order-form .actions button {
+    width: 135px;
+    height: 40px;
+}
+
+.inventory {
+    margin-top: 5px;
+}
+
+.inventory-amount {
+    float: right;
+}
+
+.total-price {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.btn-order {
+    background-color: #28AF8F;
+    color: #fff;
+    float: right;
+}
+
+
+section.item-main article.item-description {
+    min-height: 500px;
+    background-color: #fff;
+    margin: 0 35px;
+    border: 1px solid #e5e5e5;
+}
+
+article.shopping-basket-list {
+    margin: 20px 35px;
+}
+
+article.shopping-basket-list .basket-row {
+    height: 260px;
+    margin-bottom: 10px;
+}
+
+article.shopping-basket-list .basket-row .basket-item {
+    height: 260px;
+    width: 200px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    margin-right: 10px;
+    position: relative;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-image {
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-image: url(/images/basket-1.png);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+article.shopping-basket-list .basket-row .basket-item:last-child {
+    margin-right: 0;
+}
+
+article.shopping-basket-list .basket-row .basket-item p {
+    margin: 0;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-name {
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 200px;
+}
+
+article.shopping-basket-list .basket-row .basket-item .item-price {
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+

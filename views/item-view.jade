@@ -1,0 +1,122 @@
+//
+   Created by Jun on 2015. 12. 21..
+
+extends layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/itemview.css')
+
+block nav
+    include landing-nav
+
+block content
+    section.item-main
+        .inner-col
+            article.item-header
+                .item-image
+                    .image
+                .item-order-form
+                    h4.item-name 사슬무늬 로퍼
+                    .item-price
+                        .original-price
+                            .image
+                                .icon
+                            .text
+                                span $39.00
+                        .membership-price
+                            .image
+                                .icon
+                            .text
+                                span $26.00
+                    .additonal-information
+                        span(style='margin-right: 5px;font-weight: 600;') 배송정보
+                        span 3만원 이상 무료배송
+                    .simple-divider
+                    .inventory
+                        span.sell-count(style='font-size: 16px;font-weight: 500;') 320
+                            span(style='font-size:14px;') 개 구매
+                        span.inventory-amount(style='font-size: 16px;font-weight: 500;') 16
+                            span(style='font-size:14px;') 개 재고남음
+
+                    .order-form
+                        form
+                            .form-select
+                                .select-amount
+                                    select.form-control
+                                        option(value='default') 개수
+                                        option(value='1') 1
+                                        option(value='2') 2
+                                        option(value='3') 3
+                                .select-color
+                                    select.form-control
+                                        option(value='default') 색상
+                                        option(value='red') red
+                                        option(value='black') black
+                                select-size
+                                    select.form-control
+                                        option(value='default') 사이즈
+                                        option(value='S') S
+                                        option(value='M') M
+                                        option(value='L') L
+                            .simple-divider
+                            .total-price
+                                span 총 상품금액
+                                    span(style='margin-left: 5px;color: #28AF8F;font-size: 24px;') 0원
+                            .actions
+                                button.btn.btn-default.btn-basket(type='submit') 장바구니 담기 >
+                                button.btn.btn-default.btn-order(type='submit') 바로구매 >
+
+            article.item-description
+            article.shopping-basket-list
+                h5 고객님
+                .basket-row
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 사슬무늬 로퍼
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 사선 스니커즈
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 빈티지 가죽 부츠
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 뉴발란스 운동화
+                        .item-price
+                            h5 $37
+                .basket-row
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 검정 가죽 블랙신발
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 파란 단구두
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 빈티지 가죽 구두
+                        .item-price
+                            h5 $37
+                    .basket-item
+                        .item-image
+                        .item-name
+                            h5 나이키 런닝화
+                        .item-price
+                            h5 $37
+

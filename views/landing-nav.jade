@@ -1,0 +1,138 @@
+//
+   Created by Jun on 2015. 12. 21..
+
+header.main-header
+    .inner-col
+        .left-menu
+            .nav-menu.btn-group
+                button.dropdown-toggle(type='button' data-toggle='dropdown' aria-expanded='false')
+                    span.glyphicon.glyphicon-menu-hamburger
+                ul.dropdown-menu(role='menu')
+                    li
+                        a(href='#') 마이페이지
+                    li
+                        a(href='#') 장바구니
+                    li.divider
+                    li
+                        a(href='#') 고객센터
+                    li
+                        a(href='#') 회사소개
+                    li
+                        a(href='#') 블로그
+                    li.divider
+                    li
+                        a(href='#') 인재채용
+                    li
+                        a(href='#') 이용약관
+                    li
+                        a(href='#') 개인정보취급방침
+                    li
+                        a(href='#') 제휴문의
+            .nav-search.btn-group
+                button.dropdown-toggle(type='button' data-toggle='dropdown' aria-expanded='false')
+                    span.glyphicon.glyphicon-search
+                .dropdown-menu
+                    .inner-col
+                        form
+                            .search-name
+                                span.glyphicon.glyphicon-search
+                                input#search-form-name(type='text' placeholder='검색')
+                            .search-price
+                                label(for='search-form-price') 가격대
+                                input#search-form-price(type='text' readonly)
+                                .slider-range
+                                span 0원
+                                span.range-value 330,000원
+                            button.btn.btn-default(type='submit') 검색하기
+            .nav-category.btn-group
+                button.dropdown-toggle(type='button' data-toggle='dropdown' aria-expanded='false')
+                    span 카테고리
+                .dropdown-menu
+                    .inner-col
+                        .categories.col-xs-4
+                            h6 Categories
+                            .category-menu
+                                .category-menu-col.col-xs-6
+                                    ul
+                                        li
+                                            a(href='#') 티셔츠
+                                        li
+                                            a(href='#') 아우터
+                                        li
+                                            a(href='#') 셔츠
+                                        li
+                                            a(href='#') 바지
+                                        li
+                                            a(href='#') 정장
+                                        li
+                                            a(href='#') 신발
+                                        li
+                                            a(href='#') 가방
+                                        li
+                                            a(href='#') 악세사리
+                                .category-menu-col.col-xs-6
+                                    ul
+                                        li
+                                            a(href='#') 신상품
+                                        li
+                                            a(href='#') 인기상품
+                                        li
+                                            a(href='#') 판다의선택
+                                        li
+                                            a(href='#') 스타일세트
+                                        li
+                                            a(href='#') 블로그
+                                        li
+                                            a(href='#') 인재채용
+                        .featured.col-xs-8
+                            h6 Featured
+                            .feature-list
+                                .feature-item.col-xs-4
+                                    .image
+                                    .caption
+                                        h6 스웨거 티셔츠
+                                .feature-item.col-xs-4
+                                    .image
+                                    .caption
+                                        h6 하버드법대 저스트키딩
+                                .feature-item.col-xs-4
+                                    .image
+                                    .caption
+                                        h6 킹 오브 하트 티셔츠
+        h1.nav-title
+        .right-menu
+            ul
+                li.login
+                    a(href='#') 로그인
+                li.signup
+                    a(href='#') 회원가입
+
+script.
+    $(function () {
+        var $nav_slider = $('.nav-search .slider-range');
+
+        $nav_slider.slider({
+            range: "min",
+            value: 33,
+            min: 1,
+            max: 50,
+            slide: function (event, ui) {
+                console.log(ui.value);
+                $("#search-form-price").val(ui.value);
+                var pos = (ui.value / 50) * 100 + '%'; //max 값
+                console.log(pos);
+                var price = ui.value * 10 + ',' + '000원';
+                $('.nav-search .dropdown-menu .range-value').html(price);
+
+            }
+        });
+        $("#search-form-price").val($nav_slider.slider("value"));
+    });
+
+    $('.nav-search .dropdown-menu').click(function (event) {
+        event.stopPropagation();
+    });
+
+    $('.nav-category .dropdown-menu').click(function (event) {
+        event.stopPropagation();
+    });
