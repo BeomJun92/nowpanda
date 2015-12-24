@@ -1,0 +1,52 @@
+//
+   Created by Jun on 2015. 12. 23..
+
+extends cs_layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/csnotice.css')
+
+block content-title
+    .title
+        h3 공지사항
+block content-inner
+    table.table
+        thead
+            tr
+                th 번호
+                th 제목
+                th 날짜
+        tbody
+            tr
+                th 6
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+            tr
+                th 5
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+            tr
+                th 4
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+            tr
+                th 3
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+            tr
+                th 2
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+            tr
+                th 1
+                td [공지] 서비스 중단 안내
+                td 2015.12.24
+    nav
+        ul.pagination.pagination-sm
+            li: a(href='#' aria-label="Previous")
+                span(aria-hidden='true') &laquo;
+            li.active: a(href='#') 1
+            li: a(href='#') 2
+            li: a(href='#') 3
+            li: a(href='#' aria-label="Next")
+                span(aria-hidden='true') &raquo;

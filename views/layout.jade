@@ -10,7 +10,11 @@ html
             link(rel='stylesheet', href='/stylesheets/jquery-ui.min.css')
             link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
             link(rel='stylesheet', href='/stylesheets/landing.css')
+            link(rel='stylesheet', href='/stylesheets/footer.css')
+            link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
     body
         block nav
+            include landing-nav
         block content
         block footer
+            include footer

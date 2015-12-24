@@ -1,0 +1,128 @@
+section.section-title {
+    text-align: center;
+    margin: 25px 0;
+}
+
+section.section-title .title {
+    color: #28AF8F;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+section.section-title .text span {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    font-weight: 800;
+}
+
+section.section-panda .inner-col {
+    padding: 0 70px;
+}
+
+section.section-panda article {
+    display: inline-block;
+    width: 230px;
+    height: 200px;
+    margin: 0px 20px;
+}
+
+section.section-panda .image {
+    background-repeat: no-repeat;
+    background-size: 96px 82px;
+    width: 96px;
+    height: 82px;
+    margin-bottom: 5px;
+    margin-left: 22%;
+}
+
+section.section-panda .one .image {
+    background-image: url(/images/signup-article-1.png);
+}
+
+section.section-panda .two .image {
+    background-image: url(/images/signup-article-2.png);
+}
+
+section.section-panda .three .image {
+    background-image: url(/images/signup-article-3.png);
+}
+
+section.section-panda .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+section.section-panda .text {
+    font-size: 11px;
+    font-weight: 500;
+    color: #888;
+}
+
+section.section-video {
+
+}
+
+section.section-video .inner-col {
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+
+section.section-video .embed {
+    width: 560px;
+    height: 315px;
+    margin: 25px auto;
+}
+
+section.section-signup {
+    margin: 20px 0;
+}
+
+section.section-signup .inner-col {
+    width: 500px;
+}
+
+section.section-signup nav {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+section.section-signup nav span.on {
+    color: #46d5f5;
+}
+
+section.section-signup nav span {
+    color: #888;
+    font-weight: 600;
+}
+
+section.section-signup article {
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 500px;
+    height: 550px;
+    padding: 20px 25px;
+    box-shadow: 1px 1px 1px #888;
+}
+
+.checkbox a.btn.btn-default {
+    font-size: 11px;
+    padding: 0 4px;
+    border-radius: 0;
+    margin: -2px 20px 0 10px;
+}
+
+section.section-signup .title {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+section.section-signup button {
+    padding: 10px 45px;
+    display: block;
+    margin: 30px auto;
+}

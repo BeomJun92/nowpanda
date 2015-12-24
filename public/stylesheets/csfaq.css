@@ -1,0 +1,12 @@
+.panel .qmarks {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+article.content .panel {
+    margin: 0 !important;
+    border-radius: 0px;
+}
+article.content .panel+.panel {
+    border-top: 0;
+}

@@ -14,7 +14,7 @@ header.main-header
                         a(href='#') 장바구니
                     li.divider
                     li
-                        a(href='#') 고객센터
+                        a(href='/cs/notice') 고객센터
                     li
                         a(href='#') 회사소개
                     li
@@ -23,11 +23,11 @@ header.main-header
                     li
                         a(href='#') 인재채용
                     li
-                        a(href='#') 이용약관
+                        a(href='/cs/terms') 이용약관
                     li
                         a(href='#') 개인정보취급방침
                     li
-                        a(href='#') 제휴문의
+                        a(href='/cs/alliance') 제휴문의
             .nav-search.btn-group
                 button.dropdown-toggle(type='button' data-toggle='dropdown' aria-expanded='false')
                     span.glyphicon.glyphicon-search
@@ -65,7 +65,7 @@ header.main-header
                                         li
                                             a(href='#') 정장
                                         li
-                                            a(href='#') 신발
+                                            a(href='shoes') 신발
                                         li
                                             a(href='#') 가방
                                         li
@@ -99,13 +99,14 @@ header.main-header
                                     .image
                                     .caption
                                         h6 킹 오브 하트 티셔츠
-        h1.nav-title
+        a(href='/')
+            h1.nav-title
         .right-menu
             ul
                 li.login
-                    a(href='#') 로그인
+                    a(href='/login') 로그인
                 li.signup
-                    a(href='#') 회원가입
+                    a(href='/signup') 회원가입
 
 script.
     $(function () {

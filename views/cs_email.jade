@@ -1,0 +1,27 @@
+//
+   Created by Jun on 2015. 12. 23..
+
+extends cs_layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/csemail.css')
+
+block content-title
+    .title
+        h3 고객의 소리
+block content-inner
+    form
+        table.table
+            tbody
+                tr
+                    th(style='padding-top: 14px;') 제목
+                    td
+                        input.form-control(type='text')
+                tr
+                    th 내용
+                    td
+                        textarea.form-control(rows='15')
+        button.btn.btn-default.btn-email 보내기
+
+
+

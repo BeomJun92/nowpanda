@@ -1,0 +1,51 @@
+article.content .table {
+    margin-top: 30px;
+}
+
+article.content .table thead {
+    background-color: #ececec;
+    border-top: 2px solid #7b7b7b;
+}
+
+article.content .table thead > tr > th {
+    text-align: center;
+}
+
+article.content .table thead > tr > th:nth-child(1) {
+    width: 13.33%;
+}
+
+article.content .table thead > tr > th:nth-child(2) {
+    width: 66.66%;
+}
+
+article.content .table thead > tr > th:nth-child(3) {
+    width: 20%;
+}
+
+article.content .table tbody > tr > th {
+    text-align: center;
+}
+
+article.content .table tbody > tr > td:last-child {
+    text-align: center;
+}
+
+article.content nav {
+    text-align: center;
+}
+
+article.content nav ul {
+
+}
+
+article.content nav ul li a {
+    border: 0;
+    padding: 5px 6px;
+    color: #333;
+}
+
+article.content nav ul li.active a {
+    background-color: #28AF8F;
+    border: 0;
+}

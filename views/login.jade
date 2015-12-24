@@ -1,0 +1,37 @@
+//
+   Created by Jun on 2015. 12. 24..
+
+extends layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/login.css')
+
+block content
+    section.section-login
+        .inner-col
+            .title
+                span(style='color: #28AF8F;font-weight: 800;') 나우
+                span(style='font-weight:800; margin-right:5px;') 판다
+                span 로그인
+            form
+                .form-group
+                    input.form-control(type='email', placeholder='이메일')
+                .form-group
+                    input.form-control(type='password', placeholder='비밀번호')
+                .checkbox
+                    label(style='margin-right:10px;')
+                        input(type='checkbox')
+                        | 로그인 상태 유지
+                    label
+                        input(type='checkbox')
+                        | 아이디 저장
+                button.btn.btn-default.btn-nowpanda(type='submit') 로그인
+
+            .actions
+                .action-left
+                    a(href='#') 아이디 찾기
+                    a(href='#') 비밀번호 찾기
+                .action-right
+                    span 아직 회원이 아니세요?
+                    a(href='/signup') 회원가입
+

@@ -1,0 +1,23 @@
+article.content form {
+    text-align: center;
+}
+
+article.content .btn-email {
+    background-color: #28AF8F;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    width: 130px;
+    height: 40px;
+    margin: 30px 0;
+}
+
+article.content .table {
+    border-top: 2px solid #7b7b7b;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+article.content .table tbody > tr > th {
+    background-color: #f8f8f8;
+    text-align: right;
+}

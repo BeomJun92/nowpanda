@@ -21,6 +21,23 @@ ul {
     background-color: #e5e5e5;
 }
 
+.btn-nowpanda {
+    color: #fff;
+    background-color: #28AF8F;
+    border: 0;
+    border-radius: 0;
+}
+
+.btn-nowpanda:focus {
+    color: #fff;
+    background-color: #28AF8F;
+}
+
+.btn-nowpanda:hover {
+    color: #fff;
+    background-color: #28AF8F;
+}
+
 header.main-header {
     height: 45px;
     width: 100%;

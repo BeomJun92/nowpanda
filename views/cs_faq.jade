@@ -1,0 +1,61 @@
+//
+   Created by Jun on 2015. 12. 23..
+
+extends cs_layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/csfaq.css')
+
+block content-title
+    .title
+        h3 자주묻는질문
+block content-inner
+    h4 TOP5
+
+    #accordion.panel-group(role='tablist', aria-multiselectable='true')
+        .panel.panel-default
+            #headingOne.panel-heading(role='tab')
+                h4.panel-title
+                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                        span.qmarks Q
+                        span 반품신청은 어떻게 하나요?
+            #collapseOne.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+                .panel-body
+                    span 그러게요?
+        .panel.panel-default
+            #headingTwo.panel-heading(role='tab')
+                h4.panel-title
+                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                        span.qmarks Q
+                        span 상품을 교환하고 싶어요 어떻게 하나요?
+            #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                .panel-body
+                    span 그러게요?
+        .panel.panel-default
+            #headingThree.panel-heading(role='tab')
+                h4.panel-title
+                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                        span.qmarks Q
+                        span 왜 이렇게 가격이 싼가요? 혹시 상품에 문제가 있는게 아닌가요?
+            #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                .panel-body
+                    span 그러게요?
+        .panel.panel-default
+            #headingFour.panel-heading(role='tab')
+                h4.panel-title
+                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+                        span.qmarks Q
+                        span 비회원으로 구매가 안 되나요?
+            #collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+                .panel-body
+                    span 그러게요?
+        .panel.panel-default
+            #headingFive.panel-heading(role='tab')
+                h4.panel-title
+                    a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+                        span.qmarks Q
+                        span 주문한 상품의 배송상태가 '상품준비중'으로 표시되는데 무슨 뜻인가요?
+            #collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+                .panel-body
+                    span 그러게요?
+

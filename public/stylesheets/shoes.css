@@ -1,0 +1,42 @@
+section.item-main .inner-col {
+    width: 900px;
+}
+
+nav.items-subnav .select-div {
+    margin-bottom: 0px;
+}
+
+nav.items-subnav .select-div select {
+    width: 60px;
+    border: 0;
+    box-shadow: none;
+}
+
+nav.items-subnav {
+    height: 90px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    padding: 10px;
+}
+
+nav.items-subnav .nav-div {
+    margin-top: 10px;
+}
+
+nav.items-subnav ul {
+    width: 500px;
+}
+
+nav.items-subnav ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+nav.items-subnav ul li.on {
+    font-weight: 800;
+}
+
+nav.items-subnav ul li a {
+    text-align: center;
+    color: #333;
+}

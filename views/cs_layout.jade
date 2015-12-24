@@ -1,0 +1,41 @@
+//
+   Created by Jun on 2015. 12. 23..
+
+extends layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/cslayout.css')
+
+block nav
+    include landing-nav
+
+block content
+    section.cs-main
+        .inner-col
+            nav.cs-nav
+                h1.cs-nav-title 고객센터
+                ul
+                    li(class="#{cstype=='notice' ? 'on' : ''}")
+                        a(href='/cs/notice') 공지사항
+                    li(class="#{cstype=='faq' ? 'on' : ''}")
+                        a(href='/cs/faq') 자주 묻는 질문
+                    li(class="#{cstype=='email' ? 'on' : ''}")
+                        a(href='/cs/email') 고객의 소리
+                    li(class="#{cstype=='alliance' ? 'on' : ''}")
+                        a(href='/cs/alliance') 제휴문의
+                    li(class="#{cstype=='terms' ? 'on' : ''}")
+                        a(href='/cs/terms') 약관 및 정책
+
+                .contact
+                    h4 문의전화
+                    .btn.btn-default.btn-contact
+                        span 1588-3625
+                    p 주말/공휴일: 10:00 ~ 17:00
+                    p 평일: 9:00 ~ 18:00
+            article.content
+                block content-title
+                block content-inner
+
+block footer
+    include footer
+

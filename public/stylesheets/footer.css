@@ -1,0 +1,128 @@
+footer.main-footer {
+    margin-top: 40px;
+    min-width: 992px;
+}
+
+footer.main-footer nav {
+    height: 40px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    text-align: center;
+    width: 100%;
+}
+
+footer.main-footer nav ul {
+    display: inline-block;
+}
+
+footer.main-footer nav ul li {
+    padding: 10px;
+    float: left;
+}
+
+footer.main-footer nav ul li a {
+    color: #888;
+    font-size: 13px;
+}
+
+footer.main-footer nav ul li.nav-divider {
+    background-color: #888;
+    width: 1px;
+    height: 10px;
+    padding: 0;
+    margin: 16px 14px 0 14px;
+}
+
+footer.main-footer section {
+    padding: 20px 0;
+}
+
+footer.main-footer section > .inner-col {
+    width: 950px;
+}
+
+footer.main-footer section article {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer.main-footer section article.actions-left {
+    width: 130px;
+    color: #888;
+}
+
+footer.main-footer section article.actions-left div:nth-child(1) {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+footer.main-footer section article.actions-left div:nth-child(2) {
+    font-weight: 700;
+}
+
+footer.main-footer section article.actions-left div:nth-child(3) {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 22px;
+}
+
+footer.main-footer section article.actions-left i {
+    margin: 0 7px;
+}
+
+footer.main-footer section article.actions-middle {
+    width: 500px;
+    color: #888;
+    margin-left: 40px;
+}
+
+footer.main-footer section article.actions-middle .footer-address {
+    text-align: left;
+    font-size: 11px;
+}
+
+footer.main-footer section article.actions-middle .footer-call {
+    margin-top: 15px;
+}
+
+footer.main-footer section article.actions-middle .footer-call div:first-child span {
+    vertical-align: top;
+}
+
+footer.main-footer section article.actions-middle .footer-call div:first-child span:last-child {
+    font-size: 22px;
+    vertical-align: top;
+    margin-left: 8px;
+    display: inline-block;
+    margin-top: -4px;
+}
+
+footer.main-footer section article.actions-middle .footer-call div:last-child {
+    font-size: 10px;
+}
+
+footer.main-footer section article.actions-middle .footer-call p {
+    margin: 0;
+}
+
+footer.main-footer section article.actions-middle .footer-copyright {
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+footer.main-footer section article.actions-right {
+    width: 250px;
+    float: right;
+}
+
+article.actions-right button {
+    color: #fff;
+    background-color: #28AF8F;
+    border: 0;
+    padding: 8px 16px;
+}
+
+article.actions-right label {
+    color: #888;
+}
