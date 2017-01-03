@@ -1,0 +1,62 @@
+//
+   Created by Jun on 2015. 12. 24..
+
+extends layout
+
+block append head
+    link(rel='stylesheet', href='/stylesheets/signup.css')
+
+block content
+    section.section-signup
+        .inner-col
+            nav
+                span 회원가입
+                span.glyphicon.glyphicon-menu-right(style='margin:0 8px;font-size: 10px;top: 0;')
+                span.on 멤버쉽 결제
+            article
+                .title
+                    span(style='color: #28AF8F;font-weight: 800;') 나우
+                    span(style='font-weight:800; margin-right:5px;') 판다
+                    span 회원가입
+                form
+                    h5 결제방식
+                    .radio
+                        label.radio-inline
+                            input#inlineRadio1(type='radio', name='inlineRadioOptions', value='option1')
+                            |  신용카드
+                        label.radio-inline
+                            input#inlineRadio2(type='radio', name='inlineRadioOptions', value='option2')
+                            |  휴대폰
+                        label.radio-inline
+                            input#inlineRadio3(type='radio', name='inlineRadioOptions', value='option3')
+                            |  비트코인
+                    .form-group.select-card
+                        .row
+                            .col-xs-3
+                                label 카드선택
+                            .col-xs-4
+                                select.form-control
+                                    option(disabled='disabled', selected='', value='0') 카드종류
+                                    option 국민카드
+                                    option 신한카드
+                                    option 현대카드
+                                    option 삼성카드
+                    .checkbox
+                        label(style='margin-right:10px;')
+                            input(type='checkbox')
+                            | 이용약관 동의
+                        a.btn.btn-default 내용보기
+                        label
+                            input(type='checkbox')
+                            | 개인정보 수집 및 이용동의
+                        a.btn.btn-default 내용보기
+                    .simple-divider
+                    h5(style='margin-top:25px') 선택항목
+                    .checkbox
+                        label(style='margin-right:10px;')
+                            input(type='checkbox')
+                            | 이메일 수신동의
+                        label
+                            input(type='checkbox')
+                            | SMS 수신동의
+                    button.btn.btn-default.btn-nowpanda(type='submit') 다음

@@ -22,4 +22,8 @@ router.get('/signup', function (req, res, next) {
     res.render('signup', {title: 'Now Panda'});
 });
 
+router.get('/signup/membership', function (req, res, next) {
+    res.render('signup_membership', {title: 'Now Panda'});
+});
+
 module.exports = router;
